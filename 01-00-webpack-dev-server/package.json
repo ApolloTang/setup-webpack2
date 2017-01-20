@@ -1,12 +1,12 @@
 {
-  "name": "webpeck2-step-by-step",
+  "name": "setup-webpeck2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "webpack": "2.1.0-beta.28",
-    "webpack-dev-server": "2.1.0-beta.12"
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
