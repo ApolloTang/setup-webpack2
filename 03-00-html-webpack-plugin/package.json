@@ -1,0 +1,26 @@
+{
+  "name": "webpeck2-step-by-step",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "html-webpack-plugin": "2.26.0",
+    "http-server": "0.9.0",
+    "rimraf": "2.5.4",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --no-info",
+    "dev:info": "webpack-dev-server",
+    "predev": "rimraf dist",
+    "build": "webpack",
+    "prebuild": "rimraf dist",
+    "server": "http-server dist -p 9090"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
