@@ -14,7 +14,7 @@
     "dev": "webpack-dev-server --no-info",
     "dev:info": "webpack-dev-server",
     "build": "webpack",
-    "server": "http-server server -p 8080"
+    "server": "http-server server -p 9090"
   },
   "keywords": [],
   "author": "",
