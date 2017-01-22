@@ -16,7 +16,7 @@ const config = {
 module.exports = config;
 
 //
-// [1] • Root of the webpack's http dev-server.
+// [1] • Root of the webpack-dev-server's http-server.
 //     • webpack-dev-server deliver index.html file from this location.
 //     • Must be absolute path.
 //
@@ -26,7 +26,7 @@ module.exports = config;
 // [3] • Name of Webpack's input file.
 //
 // [4] • Webpack-dev-server serves Webpack's output via this path.
-//     • Not absolute path, relative to devServer.contentBase.
+//     • Not absolute path.
 //     • Output are served from memory, not from file.system.
 //
 // [5] • Name of the output.
