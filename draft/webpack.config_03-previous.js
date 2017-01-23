@@ -1,8 +1,7 @@
 const pathResolve = require('path').resolve;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// Configuration for webpack to build for distribution
-// and run webpack-dev-server using HtmlWebpackPlugin.
+// Configuration HtmlWebpackPlugin.
 const config = {
     devServer: {                                // [1]
         // contentBase: pathResolve('server'),  // [2]
