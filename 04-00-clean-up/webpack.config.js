@@ -12,22 +12,22 @@ const absolutePath_buildFolder = pathResolve('dist');
 
 const config = {
     devServer: {
-        host: webpackDevServer_host,   // [wp|4*]
-        port: webpackDevServer_port    // [wp|4*]
+        host: webpackDevServer_host,   // [wp|4]
+        port: webpackDevServer_port    // [wp|4]
     },
     context: absolutePath_sourceFolder,
     entry: './main.js',
     output: {
         filename: 'bundle.js',
         path: absolutePath_buildFolder,
-        filename: 'bundle.js'
+        publicPath: '/',
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.template.html',
             favicon: './favicon.ico'
         }),
-        new ProgressBarPlugin()        // [wp|4*]
+        new ProgressBarPlugin()        // [wp|4]
     ],
 };
 
