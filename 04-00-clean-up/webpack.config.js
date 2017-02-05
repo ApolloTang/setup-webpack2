@@ -18,8 +18,9 @@ const config = {
     context: absolutePath_sourceFolder,
     entry: './main.js',
     output: {
-        path: absolutePath_buildFolder,
         filename: 'bundle.js',
+        path: absolutePath_buildFolder,
+        filename: 'bundle.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
