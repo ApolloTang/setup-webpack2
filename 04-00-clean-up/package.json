@@ -16,8 +16,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --no-info",
     "dev:info": "webpack-dev-server",
-    "predev": "rimraf dist",
-    "predev:info": "rimraf dist",
     "build": "webpack",
     "prebuild": "rimraf dist",
     "server": "http-server dist -p 9090"
