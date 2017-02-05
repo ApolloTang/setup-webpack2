@@ -6,13 +6,14 @@ const config = {
     context: pathResolve('src'),                // [1]
     entry: './main.js',                         // [2]
     output: {
-        path: pathResolve('dist'),              // [3]
-        filename: 'bundle.js',                  // [4]
+        filename: 'bundle.js',                  // [3]
+        path: pathResolve('dist'),              // [4]
+        publicPath: '/',                        // [5]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.template.html',  // [5]
-            favicon: './favicon.ico'            // [6]
+            template: './index.template.html',  // [6]
+            favicon: './favicon.ico'            // [7]
         }),
     ],
 };
@@ -25,14 +26,21 @@ module.exports = config;
 //
 // [2] • Name of the Webpack's input file.
 //
-// [3] • For destribution, Webpack's output is saved to this location
+// [3] • Name of the webpack's output file (output chunkname).
+//
+// [4] • For destribution, Webpack's output is saved to this location
 //       on the file system.
 //     • Webpack-dev-server ignore this item.
 //
-// [4] • Name of the output.
+// [5] • During developement this is the path of which webapck's output
+//       will be served by webpack-dev-server.
+//     • When building for distribution, this is path of webpack's output
+//       relative to output.path
+//     • Html-webpack-plugin will genearted an index.html whose path in
+//       script element is set to this path value.
 //
-// [5] • HtmlWebpackPlugin use this template to generate index.html
+// [6] • HtmlWebpackPlugin use this template to generate index.html
 //
-// [6] • Tell HtmlWebpackPlugin where to find favicon
+// [7] • Tell HtmlWebpackPlugin where to find favicon
 //
 
