@@ -30,7 +30,7 @@ const config_fn = env => {                         // [wp|5]
     };
 
     if (env && env.debug) {
-        echoSetting();
+        echoSettings();
         console.log('webpack.config: ', config);
     }
     if (env && env.debug && env.inspect) {
@@ -42,7 +42,7 @@ const config_fn = env => {                         // [wp|5]
 module.exports = config_fn;
 
 
-function echoSetting() {
+function echoSettings() {
     const settings = `
         webpackDevServer_host: ${webpackDevServer_host}
         webpackDevServer_port: ${webpackDevServer_port}
