@@ -7,7 +7,7 @@ const webpackDevServer_port = 8080;
 const absolutePath_sourceFolder = pathResolve('src');
 const absolutePath_buildFolder = pathResolve('dist');
 
-const config_fn = env => {                         // [wp|5]
+const config_fn = env => {
     const config = {
         devServer: {
             host: webpackDevServer_host,
