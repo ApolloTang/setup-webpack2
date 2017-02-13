@@ -14,12 +14,13 @@
   },
 "scripts": {
   "dev": "webpack-dev-server --no-info",
-  "dev:debug": "webpack-dev-server --env.debug",
+  "dev:debug": "webpack-dev-server --env.debug --define process.env.DEBUG='true'",
   "build": "webpack",
-  "build:debug": "webpack --env.debug",
+  "build:debug": "webpack --env.debug --define process.env.DEBUG='true'",
   "prodServer": "http-server dist -p 9090",
   "prebuild": "rimraf dist",
   "prebuild:debug": "rimraf dist",
+  "inspect": "DEBUG=true node-nightly --inspect --debug-brk node_modules/.bin/webpack --env.debug --env.inspect",
   "test": "echo \"Error: no test specified\" && exit 1"
 },
   "keywords": [],

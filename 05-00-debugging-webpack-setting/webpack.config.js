@@ -34,7 +34,7 @@ const config_fn = env => {                         // [wp|5]
         console.log('webpack.config: ', config);
     }
     if (env && env.debug && env.inspect) {
-        debugger; // pause in debug inpector;
+        debugger; // pause in debug inspector;
     }
     return config;
 }
